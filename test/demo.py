@@ -1,11 +1,17 @@
-import time
 import logging
 import statistics as stat
-from time import sleep
+import time
 from colorsys import rgb_to_hsv
+from time import sleep
 
-from pylgbst.hub import SmartHub, RemoteHandset
-from pylgbst.peripherals import Peripheral, EncodedMotor, TiltSensor, Current, Voltage, COLORS, COLOR_BLACK, COLOR_GREEN
+from pylgbst.hub import SmartHub
+from pylgbst.peripherals import (
+    COLOR_BLACK,
+    COLOR_GREEN,
+    COLORS,
+    Current,
+    Voltage,
+)
 
 # logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger("hub")

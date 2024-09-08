@@ -1,13 +1,23 @@
 import time
-from time import sleep
+from signal import BLUE, GREEN, INTER_SECTOR, RED, YELLOW
 from threading import Timer
+from time import sleep
 
-from signal import RED, GREEN, BLUE, YELLOW, PURPLE, INTER_SECTOR
-from track import StructuredSector, sectors, xtrack, XTrack
-from track import FAST, SLOW, DEFAULT_BRAKING_TIME, XTRACK_BRAKING_TIME, \
-    MAX_SPEED, DEFAULT_SPEED, SECTOR_EXIT_SPEED, STATION_SPEED
 from gui import tk_color
-
+from track import (
+    DEFAULT_BRAKING_TIME,
+    DEFAULT_SPEED,
+    FAST,
+    MAX_SPEED,
+    SECTOR_EXIT_SPEED,
+    SLOW,
+    STATION_SPEED,
+    XTRACK_BRAKING_TIME,
+    StructuredSector,
+    XTrack,
+    sectors,
+    xtrack,
+)
 
 TIME_THRESHOLD = 0.5  # seconds
 

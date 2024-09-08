@@ -1,13 +1,10 @@
-import glob
-
-import statistics as stat
 import csv
-from time import sleep
+import glob
+import statistics as stat
 from colorsys import rgb_to_hsv
-import numpy as np
+from time import sleep
 
-from pylgbst.hub import SmartHub
-from src import uuid_definitions
+import numpy as np
 
 LIMIT = 600
 

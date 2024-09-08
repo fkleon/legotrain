@@ -1,8 +1,7 @@
 import queue
 import tkinter as T
-from tkinter import StringVar, LEFT, TOP
-
-from signal import RED, GREEN, BLUE, YELLOW, PURPLE, INTER_SECTOR
+from signal import BLUE, GREEN, INTER_SECTOR, PURPLE, RED, YELLOW
+from tkinter import LEFT, TOP, StringVar
 
 tkinter_output_queue = queue.Queue()
 QUEUE_POLLING = 50 # ms

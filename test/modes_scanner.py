@@ -1,9 +1,6 @@
 import json
-import logging
-import time
 
-from pylgbst.hub import SmartHub, RemoteHandset
-from pylgbst.peripherals import Peripheral, EncodedMotor, TiltSensor, Current, Voltage, COLORS, COLOR_BLACK, COLOR_GREEN
+from pylgbst.hub import SmartHub
 
 # logging.basicConfig(level=logging.DEBUG)
 

@@ -1,5 +1,7 @@
 import asyncio
-from bleak import BleakScanner, BleakClient
+
+from bleak import BleakScanner
+
 
 async def main():
     device = await BleakScanner.find_device_by_address('C8DEE900-B1ED-F26B-7992-6DC06438ADB5')

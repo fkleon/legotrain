@@ -1,8 +1,7 @@
-import time
+from signal import BLUE, GREEN, PURPLE, RED
 from threading import RLock
 
-from signal import RED, GREEN, BLUE, PURPLE
-from gui import tk_color, INTER_SECTOR
+from gui import INTER_SECTOR, tk_color
 
 # these names are actually descriptive on a topologically circular track,
 # but are just labels on a figure-8 track, or more complex topologies.

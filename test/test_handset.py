@@ -1,7 +1,6 @@
-import logging
 import time
 
-from pylgbst.hub import RemoteHandset, RemoteButton, MsgHubAttachedIO
+from pylgbst.hub import RemoteButton, RemoteHandset
 
 # logging.basicConfig(level=logging.DEBUG)
 

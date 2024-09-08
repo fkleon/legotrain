@@ -4,9 +4,8 @@ from time import sleep
 from pylgbst.hub import RemoteHandset
 from pylgbst.peripherals import RemoteButton
 
-import uuid_definitions
-
 import track
+import uuid_definitions
 from train import SmartTrain
 
 DUAL = "dual"

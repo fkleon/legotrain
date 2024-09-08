@@ -1,12 +1,9 @@
 from threading import RLock
 
-from pylgbst.peripherals import COLOR_PURPLE
-
 import uuid_definitions
-from train import SimpleTrain, SmartTrain, CompoundTrain
-from gui import GUI
 from controller import Controller
-from track import DIRECTION_B
+from gui import GUI
+from train import CompoundTrain, SimpleTrain, SmartTrain
 
 '''
 Correct startup sequence requires that, with the script already started, the train

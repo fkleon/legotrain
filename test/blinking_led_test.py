@@ -1,7 +1,8 @@
-from time import sleep
 from threading import Thread
-from pylgbst.peripherals import RemoteButton, COLOR_BLUE, COLOR_RED
-from pylgbst.hub import SmartHub, RemoteHandset
+from time import sleep
+
+from pylgbst.hub import RemoteHandset, SmartHub
+from pylgbst.peripherals import COLOR_BLUE, COLOR_RED, RemoteButton
 
 
 def swap_led_color(led, c1, c2):

@@ -1,22 +1,48 @@
-import sys
-import time, datetime
+import datetime
 import random
-from time import sleep
-from threading import Thread, Timer, RLock
+import sys
+import time
 from colorsys import rgb_to_hsv
+from signal import (
+    BLUE,
+    GREEN,
+    HUE,
+    INTER_SECTOR,
+    PURPLE,
+    RED,
+    RGB_MINIMUM,
+    SATURATION,
+    V_MINIMUM,
+    YELLOW,
+)
+from threading import RLock, Thread, Timer
+from time import sleep
 
 from pylgbst.hub import SmartHub
-from pylgbst.peripherals import Voltage, Current, LEDLight
-from pylgbst.peripherals import COLOR_BLUE, COLOR_ORANGE, COLOR_GREEN, COLOR_RED
+from pylgbst.peripherals import (
+    COLOR_BLUE,
+    COLOR_GREEN,
+    COLOR_ORANGE,
+    COLOR_RED,
+    Current,
+    LEDLight,
+    Voltage,
+)
 
 import uuid_definitions
-from track import DIRECTION_A, TIME_BLIND, MINIMUM_TIME_STATION, MAXIMUM_TIME_STATION
-from track import sectors, station_sector_names, clear_track, xtrack, XTrack
-from signal import INTER_SECTOR
-from event import EventProcessor, DummyEventProcessor, SensorEventFilter
-from signal import HUE, SATURATION, RGB_MINIMUM, V_MINIMUM
-from signal import RED, GREEN, BLUE, YELLOW, PURPLE
-from gui import tkinter_output_queue, tk_color, ASTATION, SECTOR, SIGNAL, XTRACK
+from event import EventProcessor, SensorEventFilter
+from gui import ASTATION, SECTOR, SIGNAL, XTRACK, tk_color, tkinter_output_queue
+from track import (
+    DIRECTION_A,
+    MAXIMUM_TIME_STATION,
+    MINIMUM_TIME_STATION,
+    TIME_BLIND,
+    XTrack,
+    clear_track,
+    sectors,
+    station_sector_names,
+    xtrack,
+)
 
 sign = lambda x: x and (1, -1)[x<0]
 
