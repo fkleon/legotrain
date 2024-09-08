@@ -33,6 +33,12 @@ Video: https://www.youtube.com/watch?v=AUTcSPW_DJ4
 
 ## Requirements and installation
 
+tldr;
+
+```sh
+$ pip install -e '.[dev]'
+```
+
 This is *not* a plug-and-play software distribution. In order to use it,
 you should install from the source code. You should be familiar with
 Python installation procedures and environment set up, as well as have at 
